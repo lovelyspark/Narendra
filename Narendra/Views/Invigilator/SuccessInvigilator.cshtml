@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "SuccessInvigilator";
+    if (Session["Invigiltor"] == null)
+    {
+        Response.Redirect("~/Account/Login", false);
+    }
+}
+
+<h2>Success Invigilator login</h2>
+
